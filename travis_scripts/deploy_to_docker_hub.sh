@@ -1,5 +1,5 @@
 echo "Pushing service docker images to docker hub ...."
-docker login -u bdimov -p Levski1914
+docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 docker push bdimov/tmx-authentication-service:$BUILD_NAME
 docker push bdimov/tmx-licensing-service:$BUILD_NAME
 docker push bdimov/tmx-organization-service:$BUILD_NAME
