@@ -1,4 +1,6 @@
 #!/bin/sh
+set -x
+echo $PROFILE
 getPort() {
     echo $1 | cut -d : -f 3 | xargs basename
 }
