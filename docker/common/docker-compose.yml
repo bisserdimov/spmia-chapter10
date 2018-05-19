@@ -15,7 +15,6 @@ configserver:
     environment:
        EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
        ENCRYPT_KEY:       "IMSYMMETRIC"
-
 zuulserver:
     image: bdimov/tmx-zuulsvr:${BUILD_NAME}
     mem_limit: 1073741824
@@ -87,7 +86,6 @@ organizationservice:
       ZKSERVER_URI: "kafkaserver"
       AUTHSERVER_URI:   "http://authenticationservice:8901/user"
       ENCRYPT_KEY:       "IMSYMMETRIC"
-
 kafkaserver:
     image: spotify/kafka
     mem_limit: 1073741824
